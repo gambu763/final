@@ -16,26 +16,26 @@ export default function About() {
       <Nav dark={false} />
 
       {/* Layout */}
-      <div className="flex min-h-screen pt-24">
+      <div className="flex flex-col md:flex-row min-h-screen pt-24">
 
-      {/* Left: portraits, scroll with content */}
-<div className="w-3/5 flex-shrink-0 flex flex-col p-6 pt-0">
-  <img
-    src="https://res.cloudinary.com/dopqrpvhl/image/upload/P32_lio0wt"
-    alt="Jayshotz"
-    className="w-full flex-1 object-cover object-top"
-    style={{ minHeight: '60vh' }}
-  />
-  <img
-    src="https://res.cloudinary.com/dopqrpvhl/image/upload/P10_a9q2y6"
-    alt="Jayshotz"
-    className="w-full flex-1 object-cover object-center mt-3"
-    style={{ minHeight: '60vh' }}
-  />
-</div>
+        {/* Left: portraits */}
+        <div className="w-full md:w-3/5 flex-shrink-0 flex flex-col p-6 pt-0">
+          <img
+            src="https://res.cloudinary.com/dopqrpvhl/image/upload/P32_lio0wt"
+            alt="Jayshotz"
+            className="w-full object-cover object-top"
+            style={{ minHeight: '60vw', maxHeight: '90vh' }}
+          />
+          <img
+            src="https://res.cloudinary.com/dopqrpvhl/image/upload/P10_a9q2y6"
+            alt="Jayshotz"
+            className="w-full object-cover object-center mt-3"
+            style={{ minHeight: '60vw', maxHeight: '90vh' }}
+          />
+        </div>
 
         {/* Right: biography content */}
-        <div className="w-2/5 bg-black/70 px-10 py-12 overflow-y-auto text-white">
+        <div className="w-full md:w-2/5 bg-black/70 px-6 md:px-10 py-12 overflow-y-auto text-white">
 
           {/* Header */}
           <p className="text-xs tracking-[0.3em] uppercase text-white/40 mb-2 font-medium">
