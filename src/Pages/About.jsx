@@ -1,16 +1,13 @@
 import Nav from '../Components/Nav'
 
 
-
-
-
 export default function About() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden font-body">
 
       {/* Background */}
       <img
-        src= "/assets/P9.jpg" 
+        src="https://res.cloudinary.com/dopqrpvhl/image/upload/P9_akrtfe"
         alt="Background"
         className="fixed inset-0 w-full h-full object-cover -z-10"
       />
@@ -24,13 +21,13 @@ export default function About() {
       {/* Left: portraits, scroll with content */}
 <div className="w-3/5 flex-shrink-0 flex flex-col p-6 pt-0">
   <img
-    src= "/assets/P32.jpg" 
+    src="https://res.cloudinary.com/dopqrpvhl/image/upload/P32_lio0wt"
     alt="Jayshotz"
     className="w-full flex-1 object-cover object-top"
     style={{ minHeight: '60vh' }}
   />
   <img
-    src= "/assets/P10.jpg" 
+    src="https://res.cloudinary.com/dopqrpvhl/image/upload/P10_a9q2y6"
     alt="Jayshotz"
     className="w-full flex-1 object-cover object-center mt-3"
     style={{ minHeight: '60vh' }}

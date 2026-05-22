@@ -2,84 +2,81 @@ import { useEffect, useRef } from 'react'
 import Nav from '../Components/Nav'
 
 
-
-
 const projects = [
   {
     id: 1,
     title: 'Uncle Waffels: Zenzele',
-    thumbnail: "/assets/P2.jpg", 
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P2_t0uxcp",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=MHcp9rRPIWQ&list=RDMHcp9rRPIWQ&start_radio=1',
   },
   {
     id: 2,
     title: 'Bophelo bo ke Telenovela',
-    subtitle: 'New music video with @poisoncuretv',
-    thumbnail: "/assets/P4.jpg" ,
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P4_nvhilj",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=Y7tKDTKDJvU&list=RDY7tKDTKDJvU&start_radio=1',
   },
   {
     id: 3,
     title: 'DBN Gogo Fly Radio Mix ',
-    thumbnail: "/assets/P15.jpg", 
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P15_ofv8wq",
     subtitle: 'live shot',
     link: 'https://www.youtube.com/watch?v=AJktO3zsSDg&list=RDAJktO3zsSDg&start_radio=1',
   },
   {
     id: 4,
     title: 'DJ Tshegu - Basela',
-    thumbnail: "/assets/P16.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P16_iqnbmt",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=kXKh74ikHrU&list=RDkXKh74ikHrU&start_radio=1',
   },
   {
     id: 5,
     title: 'DJ Tshengu - Chengu Shesha',
-    thumbnail: "/assets/P17.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P17_ijg0fo",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=4a-zkNFOOsg&list=RD4a-zkNFOOsg&start_radio=1',
   },
   {
     id: 6,
     title: 'Kamo Mphela - Dali',
-    thumbnail: "/assets/P18.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P18_bwahwl",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=hcqcy6cdCw8&list=RDhcqcy6cdCw8&start_radio=1',
   },
   {
     id: 7,
     title: 'Leemack - Umfula',
-    thumbnail: "/assets/P19.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P19_qzqosk",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=-Qk8xU0Ru1U&list=RD-Qk8xU0Ru1U&start_radio=1',
   },
   {
     id: 8,
     title: 'Tito Twhala - Bami',
-    thumbnail: "/assets/P20.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P20_ibyfo7",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=KK4dC7rASYs&list=RDKK4dC7rASYs&start_radio=1',
   },
   {
     id: 9,
     title: 'Waffles Fly Radio Mix',
-    thumbnail: "/assets/P21.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P21_x2par9",
     subtitle: 'live shot',
     link: 'https://www.youtube.com/watch?v=K070t0y1-fM&list=RDK070t0y1-fM&start_radio=1',
   },
    {
     id: 10,
     title: 'Tumi moliko SONY COLLAB',
-    thumbnail: "/assets/P30.jpg",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P30_kbugba",
     subtitle: 'instagram reel',
     link: 'https://www.instagram.com/reel/CTFCJXLKE2N/',
   },
    {
     id: 11,
     title: 'DJ Tshegu, Focalistic, Ch cco, Nkosazana Daughter - Basela ft. Ceehle Sims Noreng',
-    thumbnail: "/assets/P31.PNG",
+    thumbnail: "https://res.cloudinary.com/dopqrpvhl/image/upload/P31_otgzkj",
     subtitle: 'music video',
     link: 'https://www.youtube.com/watch?v=kXKh74ikHrU&list=RDkXKh74ikHrU&start_radio=1',
   },
@@ -134,15 +131,15 @@ function ProjectCard({ project }) {
           </div>
         </div>
         <video
-  src="/assets/REEL.MOV"
-  controls
-  autoPlay
-  loop
-  muted
-  className="w-full rounded-lg"
->
-  Your browser does not support the video tag.
-</video>
+          src="REPLACE_WITH_CLOUDINARY_REEL_URL"
+          controls
+          autoPlay
+          loop
+          muted
+          className="w-full rounded-lg"
+        >
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="pt-4 pb-2">
         <h3 className="text-base font-semibold text-white tracking-tight">{project.title}</h3>
@@ -165,7 +162,7 @@ export default function Projects() {
       {/* Background */}
       <div className="fixed inset-0 -z-10">
         <img
-          src="/assets/P9.jpg" 
+          src="https://res.cloudinary.com/dopqrpvhl/image/upload/P9_akrtfe"
           alt="Background"
           className="w-full h-full object-cover"
         />

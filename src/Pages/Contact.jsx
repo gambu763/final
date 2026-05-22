@@ -23,7 +23,7 @@ export default function Contact() {
       {/* Blurred background */}
       <div className="fixed inset-0 -z-10">
         <img
-          src="/assets/P13.jpg" 
+          src="https://res.cloudinary.com/dopqrpvhl/image/upload/P13_tmpefv"
           alt="Background"
           className="w-full h-full object-cover"
         />
