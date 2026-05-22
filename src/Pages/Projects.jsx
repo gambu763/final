@@ -13,7 +13,7 @@ import p21 from '../assets/P21.jpg'
 import p30 from '../assets/P30.jpg'
 import p31 from '../assets/P31.PNG'
 
-import reel from '../assets/REEL.MOV'
+
 
 
 const projects = [
@@ -191,14 +191,7 @@ export default function Projects() {
           <p className="text-xs tracking-[0.25em] uppercase text-white/40 mb-4 font-medium">
             Reel
           </p>
-          <video
-            controls
-            className="w-full aspect-video object-cover bg-black"
-            preload="metadata"
-          >
-            <source src={reel} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          
           <p className="text-sm text-white/50 mt-3 tracking-wide">JAYSHOTZ REEL</p>
         </div>
 
