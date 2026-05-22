@@ -1,18 +1,7 @@
 import { useEffect, useRef } from 'react'
 import Nav from '../Components/Nav'
 import bg from '../assets/P9.jpg'
-import p2 from '../assets/P2.jpg'
-import p4 from '../assets/P4.jpg'
-import p15 from '../assets/P15.jpg'
-import p16 from '../assets/P16.jpg'
-import p17 from '../assets/P17.jpg'
-import p18 from '../assets/P18.jpg'
-import p19 from '../assets/P19.jpg'
-import p20 from '../assets/P20.jpg'
-import p21 from '../assets/P21.jpg'
-import p30 from '../assets/P30.jpg'
-import p31 from '../assets/P31.PNG'
-S
+
 
 
 
