@@ -130,16 +130,6 @@ function ProjectCard({ project }) {
             </div>
           </div>
         </div>
-        <video
-          src="REPLACE_WITH_CLOUDINARY_REEL_URL"
-          controls
-          autoPlay
-          loop
-          muted
-          className="w-full rounded-lg"
-        >
-          Your browser does not support the video tag.
-        </video>
       </div>
       <div className="pt-4 pb-2">
         <h3 className="text-base font-semibold text-white tracking-tight">{project.title}</h3>
@@ -186,7 +176,16 @@ export default function Projects() {
           <p className="text-xs tracking-[0.25em] uppercase text-white/40 mb-4 font-medium">
             Reel
           </p>
-          
+          <video
+            src="https://res.cloudinary.com/dopqrpvhl/video/upload/v1779463490/reeel_comprased_uffyne.mov"
+            controls
+            autoPlay
+            loop
+            muted
+            className="w-full rounded-lg"
+          >
+            Your browser does not support the video tag.
+          </video>
           <p className="text-sm text-white/50 mt-3 tracking-wide">JAYSHOTZ REEL</p>
         </div>
 
