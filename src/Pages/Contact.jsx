@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Nav from '../Components/Nav'
-import bg from '../assets/P13.jpg'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
@@ -24,7 +23,7 @@ export default function Contact() {
       {/* Blurred background */}
       <div className="fixed inset-0 -z-10">
         <img
-          src={bg}
+          src="/assets/P13.jpg" 
           alt="Background"
           className="w-full h-full object-cover"
         />

@@ -1,7 +1,7 @@
 import Nav from '../Components/Nav'
-import bg from '../assets/P9.jpg'
-import portrait from '../assets/P32.jpg'
-import p10 from '../assets/P10.jpg'
+
+
+
 
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
 
       {/* Background */}
       <img
-        src={bg}
+        src= "/assets/P9.jpg" 
         alt="Background"
         className="fixed inset-0 w-full h-full object-cover -z-10"
       />
@@ -24,13 +24,13 @@ export default function About() {
       {/* Left: portraits, scroll with content */}
 <div className="w-3/5 flex-shrink-0 flex flex-col p-6 pt-0">
   <img
-    src={portrait}
+    src= "/assets/P32.jpg" 
     alt="Jayshotz"
     className="w-full flex-1 object-cover object-top"
     style={{ minHeight: '60vh' }}
   />
   <img
-    src={p10}
+    src= "/assets/P10.jpg" 
     alt="Jayshotz"
     className="w-full flex-1 object-cover object-center mt-3"
     style={{ minHeight: '60vh' }}

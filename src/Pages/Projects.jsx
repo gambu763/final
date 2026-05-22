@@ -12,7 +12,7 @@ import p20 from '../assets/P20.jpg'
 import p21 from '../assets/P21.jpg'
 import p30 from '../assets/P30.jpg'
 import p31 from '../assets/P31.PNG'
-
+S
 
 
 
@@ -20,7 +20,7 @@ const projects = [
   {
     id: 1,
     title: 'Uncle Waffels: Zenzele',
-    thumbnail: p2,
+    thumbnail: "/assets/P2.jpg", 
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=MHcp9rRPIWQ&list=RDMHcp9rRPIWQ&start_radio=1',
   },
@@ -28,70 +28,70 @@ const projects = [
     id: 2,
     title: 'Bophelo bo ke Telenovela',
     subtitle: 'New music video with @poisoncuretv',
-    thumbnail: p4,
+    thumbnail: "/assets/P4.jpg" ,
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=Y7tKDTKDJvU&list=RDY7tKDTKDJvU&start_radio=1',
   },
   {
     id: 3,
     title: 'DBN Gogo Fly Radio Mix ',
-    thumbnail: p15,
+    thumbnail: "/assets/P15.jpg", 
     subtitle: 'live shot',
     link: 'https://www.youtube.com/watch?v=AJktO3zsSDg&list=RDAJktO3zsSDg&start_radio=1',
   },
   {
     id: 4,
     title: 'DJ Tshegu - Basela',
-    thumbnail: p16,
+    thumbnail: "/assets/P16.jpg",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=kXKh74ikHrU&list=RDkXKh74ikHrU&start_radio=1',
   },
   {
     id: 5,
     title: 'DJ Tshengu - Chengu Shesha',
-    thumbnail: p17,
+    thumbnail: "/assets/P17.jpg",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=4a-zkNFOOsg&list=RD4a-zkNFOOsg&start_radio=1',
   },
   {
     id: 6,
     title: 'Kamo Mphela - Dali',
-    thumbnail: p18,
+    thumbnail: "/assets/P18.jpg",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=hcqcy6cdCw8&list=RDhcqcy6cdCw8&start_radio=1',
   },
   {
     id: 7,
     title: 'Leemack - Umfula',
-    thumbnail: p19,
+    thumbnail: "/assets/P19.jpg",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=-Qk8xU0Ru1U&list=RD-Qk8xU0Ru1U&start_radio=1',
   },
   {
     id: 8,
     title: 'Tito Twhala - Bami',
-    thumbnail: p20,
+    thumbnail: "/assets/P20.jpg",
     subtitle: 'Music video',
     link: 'https://www.youtube.com/watch?v=KK4dC7rASYs&list=RDKK4dC7rASYs&start_radio=1',
   },
   {
     id: 9,
     title: 'Waffles Fly Radio Mix',
-    thumbnail: p21,
+    thumbnail: "/assets/P21.jpg",
     subtitle: 'live shot',
     link: 'https://www.youtube.com/watch?v=K070t0y1-fM&list=RDK070t0y1-fM&start_radio=1',
   },
    {
     id: 10,
     title: 'Tumi moliko SONY COLLAB',
-    thumbnail: p30,
+    thumbnail: "/assets/P30.jpg",
     subtitle: 'instagram reel',
     link: 'https://www.instagram.com/reel/CTFCJXLKE2N/',
   },
    {
     id: 11,
     title: 'DJ Tshegu, Focalistic, Ch cco, Nkosazana Daughter - Basela ft. Ceehle Sims Noreng',
-    thumbnail: p31,
+    thumbnail: "/assets/P31.PNG",
     subtitle: 'music video',
     link: 'https://www.youtube.com/watch?v=kXKh74ikHrU&list=RDkXKh74ikHrU&start_radio=1',
   },
@@ -167,7 +167,7 @@ export default function Projects() {
       {/* Background */}
       <div className="fixed inset-0 -z-10">
         <img
-          src={bg}
+          src="/assets/P9.jpg" 
           alt="Background"
           className="w-full h-full object-cover"
         />
