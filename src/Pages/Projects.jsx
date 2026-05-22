@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import Nav from '../Components/Nav'
-import bg from '../assets/P9.jpg'
 
 
 
