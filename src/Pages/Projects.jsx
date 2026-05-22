@@ -134,6 +134,16 @@ function ProjectCard({ project }) {
             </div>
           </div>
         </div>
+        <video
+  src="/assets/REEL.MOV"
+  controls
+  autoPlay
+  loop
+  muted
+  className="w-full rounded-lg"
+>
+  Your browser does not support the video tag.
+</video>
       </div>
       <div className="pt-4 pb-2">
         <h3 className="text-base font-semibold text-white tracking-tight">{project.title}</h3>
