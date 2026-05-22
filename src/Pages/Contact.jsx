@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Nav from '../components/Nav'
+import Nav from '../Components/Nav'
 import bg from '../assets/P13.jpg'
 
 export default function Contact() {

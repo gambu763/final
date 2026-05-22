@@ -1,4 +1,4 @@
-import Nav from '../components/Nav'
+import Nav from '../Components/Nav'
 import bg from '../assets/P9.jpg'
 
 export default function Home() {

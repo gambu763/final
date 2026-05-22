@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import Nav from '../components/Nav'
+import Nav from '../Components/Nav'
 import bg from '../assets/P9.jpg'
 import p2 from '../assets/P2.jpg'
 import p4 from '../assets/P4.jpg'
@@ -11,7 +11,7 @@ import p19 from '../assets/P19.jpg'
 import p20 from '../assets/P20.jpg'
 import p21 from '../assets/P21.jpg'
 import p30 from '../assets/P30.jpg'
-import p31 from '../assets/P31.png'
+import p31 from '../assets/P31.PNG'
 
 import reel from '../assets/REEL.MOV'
 
