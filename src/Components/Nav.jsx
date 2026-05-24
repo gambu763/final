@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-export default function Nav({ dark = false }) {
+export default function Nav({ dark = false, logoSrc = null }) {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -24,8 +24,18 @@ export default function Nav({ dark = false }) {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-8">
-        <Link to="/" className={`text-base tracking-[0.3em] uppercase font-semibold ${nameColor}`}>
-          Jayshotz
+        <Link to="/" className="flex items-center">
+          {logoSrc ? (
+            <img
+              src={logoSrc}
+              alt="Jayshotz"
+              className="h-10 w-auto object-contain"
+            />
+          ) : (
+            <span className={`text-base tracking-[0.3em] uppercase font-semibold ${nameColor}`}>
+              Jayshotz
+            </span>
+          )}
         </Link>
 
         {/* Desktop links */}
