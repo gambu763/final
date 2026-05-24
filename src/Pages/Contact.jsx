@@ -9,7 +9,7 @@ export default function Contact() {
   }
 
   const handleSend = () => {
-    const to = 'nkosin08@gmail.com'
+    const to = 'shotzbyjay01@gmail.com'
     const subject = encodeURIComponent(form.subject || 'Enquiry')
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
