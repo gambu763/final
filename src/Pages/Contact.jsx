@@ -42,8 +42,8 @@ export default function Contact() {
           {/* Contact details */}
           <div className="mb-8 space-y-1 text-sm text-black/60">
             <p>
-              <a href="mailto:nkosin08@gmail.com" className="underline underline-offset-2 hover:text-black transition-colors">
-                nkosin08@gmail.com
+              <a href="mailto:shotzbyjay01@gmail.com" className="underline underline-offset-2 hover:text-black transition-colors">
+                shotzbyjay01@gmail.com
               </a>
             </p>
             <p>
