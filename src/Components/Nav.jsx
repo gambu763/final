@@ -29,7 +29,7 @@ export default function Nav({ dark = false, logoSrc = null }) {
             <img
               src={logoSrc}
               alt="Jayshotz"
-              className="h-10 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           ) : (
             <span className={`text-base tracking-[0.3em] uppercase font-semibold ${nameColor}`}>
