@@ -1,6 +1,34 @@
+import { useEffect, useRef, useState } from 'react'
 import Nav from '../Components/Nav'
 
 export default function Home() {
+  const textRef = useRef(null)
+  const [transform, setTransform] = useState({ scale: 1, angle: -29 })
+
+  useEffect(() => {
+    const compute = () => {
+      if (!textRef.current) return
+      const w = window.innerWidth
+      const h = window.innerHeight
+      // true corner-to-corner diagonal
+      const diagonal = Math.sqrt(w * w + h * h)
+      // angle from horizontal: negative so text rises left→right
+      const angle = -(Math.atan2(h, w) * 180 / Math.PI)
+      // scale text width to match the diagonal exactly
+      const textWidth = textRef.current.offsetWidth
+      const scale = diagonal / textWidth
+      setTransform({ scale, angle })
+    }
+
+    // slight delay so font is loaded before measuring
+    const t = setTimeout(compute, 80)
+    window.addEventListener('resize', compute)
+    return () => {
+      clearTimeout(t)
+      window.removeEventListener('resize', compute)
+    }
+  }, [])
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <img
@@ -14,46 +42,27 @@ export default function Home() {
         logoSrc="https://res.cloudinary.com/dopqrpvhl/image/upload/v1779612456/WhatsApp_Image_2026-05-22_at_22.30.01_nqajeq.jpg"
       />
 
-      {/* Diagonal "Jayshotz Portfolio" — J at bottom-left, O at top-right */}
-      <div
-        className="absolute inset-0 z-10 pointer-events-none overflow-hidden"
-      >
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          className="absolute inset-0 w-full h-full"
-          style={{ overflow: 'visible' }}
+      {/* "JAYSHOTZ PORTFOLIO" — J anchored bottom-left, last O at top-right */}
+      <div className="absolute inset-0 z-10 pointer-events-none flex items-center justify-center">
+        <h1
+          ref={textRef}
+          style={{
+            fontFamily: "'Montserrat', 'Helvetica Neue', sans-serif",
+            fontWeight: 900,
+            fontSize: '120px',
+            color: 'white',
+            textTransform: 'uppercase',
+            whiteSpace: 'nowrap',
+            letterSpacing: '0.04em',
+            transformOrigin: 'center center',
+            transform: `rotate(${transform.angle}deg) scale(${transform.scale})`,
+            textShadow: '0 4px 32px rgba(0,0,0,0.55)',
+            opacity: 0.93,
+            lineHeight: 1,
+          }}
         >
-          <defs>
-            <path
-              id="diagonal-path"
-              d="M 2,97 L 98,3"
-            />
-          </defs>
-          <text
-            style={{
-              fontFamily: "'Montserrat', 'Helvetica Neue', sans-serif",
-              fontWeight: 700,
-              fill: 'white',
-              fontSize: '6.5',
-              letterSpacing: '0.6',
-              textTransform: 'uppercase',
-              textShadow: '0 2px 20px rgba(0,0,0,0.5)',
-              opacity: 0.92,
-            }}
-          >
-            <textPath
-              href="#diagonal-path"
-              startOffset="0%"
-              dominantBaseline="middle"
-              style={{ filter: 'drop-shadow(0 2px 12px rgba(0,0,0,0.6))' }}
-            >
-              Jayshotz Portfolio
-            </textPath>
-          </text>
-        </svg>
+          Jayshotz Portfolio
+        </h1>
       </div>
     </div>
   )
