@@ -15,10 +15,10 @@ export default function Home() {
         logoSrc="https://res.cloudinary.com/dopqrpvhl/image/upload/v1779612456/WhatsApp_Image_2026-05-22_at_22.30.01_nqajeq.jpg"
       />
 
-      {/* "JAYSHOTZ PORTFOLIO" — vertical, left side just before the subject */}
+      {/* "JAYSHOTZ PORTFOLIO" — vertical, J starts near logo, flows downward */}
       <div
-        className="absolute inset-y-0 z-10 pointer-events-none flex items-center"
-        style={{ left: '2%' }}
+        className="absolute z-10 pointer-events-none"
+        style={{ left: '1%', top: '64px' }}
       >
         <h1
           style={{
@@ -29,8 +29,8 @@ export default function Home() {
             textTransform: 'uppercase',
             whiteSpace: 'nowrap',
             letterSpacing: '0.04em',
-            transformOrigin: 'center center',
-            transform: 'rotate(-90deg)',
+            writingMode: 'vertical-lr',
+            textOrientation: 'mixed',
             textShadow: '0 4px 32px rgba(0,0,0,0.55)',
             opacity: 0.93,
             lineHeight: 1,
