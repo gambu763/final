@@ -15,10 +15,10 @@ export default function Home() {
         logoSrc="https://res.cloudinary.com/dopqrpvhl/image/upload/v1779612456/WhatsApp_Image_2026-05-22_at_22.30.01_nqajeq.jpg"
       />
 
-      {/* "JAYSHOTZ PORTFOLIO" — vertical, J starts near logo, flows downward */}
+      {/* "JAYSHOTZ PORTFOLIO" — vertical, starts next to the logo */}
       <div
         className="absolute z-10 pointer-events-none"
-        style={{ left: '1%', top: '64px' }}
+        style={{ left: '90px', top: '28px' }}
       >
         <h1
           style={{
@@ -36,7 +36,7 @@ export default function Home() {
             lineHeight: 1,
           }}
         >
-          Jayshotz Portfolio
+          jayshotz portfolio
         </h1>
       </div>
     </div>
