@@ -18,7 +18,7 @@ export default function Home() {
       {/* "JAYSHOTZ PORTFOLIO" — vertical, left side just before the subject */}
       <div
         className="absolute inset-y-0 z-10 pointer-events-none flex items-center"
-        style={{ left: '7%' }}
+        style={{ left: '2%' }}
       >
         <h1
           style={{
